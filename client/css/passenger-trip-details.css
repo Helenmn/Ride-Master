@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  direction: rtl;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: #FACC15;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section {
+  background-color: #1E293B;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #93C5FD;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#ride-title,
+#ride-date-time,
+#pickup-location,
+#driver-info {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #CBD5E1;
+}
+
+ul#passengers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#passengers-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #334155;
+  color: #E2E8F0;
+  font-size: 1rem;
+}
+
+#chat-box {
+  height: 300px;
+  overflow-y: auto;
+  background-color: #0F172A;
+  padding: 1rem;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chat-message {
+  padding: 6px 10px;
+  border-radius: 10px;
+  max-width: 75%;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.chat-own {
+  background-color: #2563EB; 
+  color: white;
+  align-self: flex-end;     
+  text-align: right;
+}
+
+.chat-other {
+  background-color: #334155; 
+  color: #E5E7EB;
+  align-self: flex-start;   
+  text-align: right;
+}
+
+
+#chat-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: #1E293B;
+  color: white;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.05);
+}
+
+#chat-form button {
+  background-color: #06B6D4;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#chat-form button:hover {
+  background-color: #0891B2;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  #chat-box {
+    height: 200px;
+  }
+
+  #chat-form {
+    flex-direction: column;
+  }
+
+  #chat-form button {
+    width: 100%;
+  }
+}
+#review-section {
+  margin-top: 1rem;
+}
+
+#review-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+}
+
+#review-form label {
+  color: #F8FAFC;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#review-form input[type="number"],
+#review-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #1E293B;
+  color: white;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.3s;
+}
+
+#review-form input[type="number"]:focus,
+#review-form textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+#review-form button {
+  background-color: #22C55E;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#review-form button:hover {
+  background-color: #16A34A;
+}
+#navigate-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 10px 16px;
+  background-color: #3B82F6;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#navigate-button:hover {
+  background-color: #2563EB;
+}
+.mobile-back-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-back-button {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 1rem;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .mobile-back-button:hover {
+    background-color: #0891B2;
+  }
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

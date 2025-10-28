@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>דף הבית - RideMatch</title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="main-header">
+    <a href="home.html" class="logo">🚗 RideMatch</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="פתח תפריט">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="home.html">דף הבית</a>
+      <a href="my-trips.html">הנסיעות שלי</a>
+      <a href="my-profile.html">הפרופיל שלי</a>
+        <a href="login.html">התנתקות</a>
+    </nav>
+  </header>
+  <main>
+  <section class="welcome-banner">
+<section class="greeting"><span id="greeting"></span></section>
+  <h1>ברוך הבא ל-RideMatch</h1>
+  <p>מצא את הנסיעה שלך לאירוע הקרוב בלחיצה אחת</p>
+</section>
+    <section class="search-container">
+      <input type="text" placeholder="חפש אירועים לפי שם או מיקום..." aria-label="חיפוש אירועים" />
+    </section>
+    <section class="events-section">
+  <h2>אירועים קרובים</h2>
+  <section class="events-grid"></section>
+</section>
+  </main>
+  <script src="js/header.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

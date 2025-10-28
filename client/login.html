@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>כניסה למערכת</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <main class="login-box">
+    <h2>כניסה למערכת</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="שם משתמש" required />
+      <input type="password" id="password" placeholder="סיסמה" required />
+      <button type="submit">התחבר</button>
+      <p class="message" id="messageArea"></p>
+    </form>
+    <button id="goToSignUp" type="button" class="main-btn">הירשם</button>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>

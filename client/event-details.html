@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>פרטי אירוע</title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/event-details.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="main-header">
+    <a href="home.html" class="logo">🚗 RideMatch</a>
+    <a href="home.html" class="mobile-home-button">דף הבית</a>
+    <nav class="nav-links">
+      <a href="home.html">דף הבית</a>
+      <a href="my-trips.html">הנסיעות שלי</a>
+      <a href="my-profile.html">הפרופיל שלי</a>
+    </nav>
+</header>
+  <main>
+    <section class="event-header">
+      <h1>טעינת אירוע...</h1>
+      <p></p>
+      <section class="search-container">
+        <input id="searchInput" type="text" placeholder="חפש לפי שם אירוע או מיקום איסוף..." aria-label="חיפוש אירועים" />
+      </section>
+          <section class="drivers-section">
+  <h2>נהגים שנוסעים לאירוע:</h2>
+  <section class="add-driver-button">
+<a id="addDriverLink" href="#" class="driver-button">➕ הוסף אותי כנהג</a>
+  </section>
+  <section class="drivers-list"></section>
+</section>
+  <script src="js/event-details.js"></script>
+</body>
+</html>
